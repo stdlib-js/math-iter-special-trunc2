@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/math-iter-special-trunc2",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Create an iterator which rounds each iterated value to the nearest power of two toward zero.",
   "license": "Apache-2.0",
   "author": {
