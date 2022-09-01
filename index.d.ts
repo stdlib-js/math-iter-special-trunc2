@@ -1,4 +1,4 @@
-/**
+/*
 * @license Apache-2.0
 *
 * Copyright (c) 2020 The Stdlib Authors.
@@ -16,16 +16,27 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 2.0
+
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@esm/index.d.ts"/>
+
+import { Iterator as Iter, IterableIterator } from '@stdlib/types/iter';
+
+// Define a union type representing both iterable and non-iterable iterators:
+type Iterator = Iter | IterableIterator;
 
 /**
-* Create an iterator which rounds each iterated value to the nearest power of two toward zero.
+* Returns an iterator which rounds each iterated value to the nearest power of two toward zero.
 *
-* @module @stdlib/math-iter-special-trunc2
+* ## Notes
+*
+* -   If an environment supports `Symbol.iterator` **and** a provided iterator is iterable, the returned iterator is iterable.
+*
+* @param iterator - input iterator
+* @returns iterator
 *
 * @example
-* var uniform = require( '@stdlib/random-iter-uniform' );
-* var iterTrunc2 = require( '@stdlib/math-iter-special-trunc2' );
+* var uniform = require( `@stdlib/random/iter/uniform` );
 *
 * var iter = iterTrunc2( uniform( -100.0, 100.0 ) );
 *
@@ -40,12 +51,9 @@
 *
 * // ...
 */
-
-// MODULES //
-
-var iterator = require( './main.js' );
+declare function iterTrunc2( iterator: Iterator ): Iterator;
 
 
 // EXPORTS //
 
-module.exports = iterator;
+export = iterTrunc2;
