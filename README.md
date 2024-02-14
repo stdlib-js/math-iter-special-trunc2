@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import iterTrunc2 from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-special-trunc2@esm/index.mjs';
+import iterTrunc2 from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-special-trunc2@v0.2.0-esm/index.mjs';
 ```
 
 #### iterTrunc2( iterator )
@@ -114,7 +114,7 @@ The returned [iterator][mdn-iterator-protocol] protocol-compliant object has the
 <script type="module">
 
 import uniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-iter-uniform@esm/index.mjs';
-import iterTrunc2 from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-special-trunc2@esm/index.mjs';
+import iterTrunc2 from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-iter-special-trunc2@v0.2.0-esm/index.mjs';
 
 // Create a seeded iterator for generating pseudorandom numbers:
 var rand = uniform( -200.0, 200.0, {
